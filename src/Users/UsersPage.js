@@ -1,9 +1,13 @@
 import React from "react"
+import { users } from "../static.json"
+import UsersList from "./UsersList"
 
-export default function UsersPage() {
+const UsersPage = () => {
   return (
-    <main className="users-page">
-      <p>Users!</p>
+    <main className="bookables-page">
+      <UsersList />{" "}
     </main>
   )
 }
+
+export default UsersPage
