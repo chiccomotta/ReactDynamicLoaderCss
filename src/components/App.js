@@ -1,6 +1,5 @@
 import React from "react"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
-import "../App.css"
 
 import UserPicker from "../Users/UserPicker.js"
 import { FaCalculator, FaDoorOpen, FaUsers } from "react-icons/fa"
@@ -8,6 +7,7 @@ import { FaCalculator, FaDoorOpen, FaUsers } from "react-icons/fa"
 import BookablesPage from "../Bookables/BookablesPage"
 import BookingsPage from "../Bookings/BookingsPage"
 import UsersPage from "../Users/UsersPage"
+import LoaderStyle from "../LoaderStyle/LoaderStyle.js"
 
 export default function App() {
   return (
@@ -39,7 +39,9 @@ export default function App() {
 
           <UserPicker />
         </header>
-
+        <div>
+          <LoaderStyle />
+        </div>
         <Routes>
           <Route path="/bookings" element={<BookingsPage />} />
           <Route path="/bookables" element={<BookablesPage />} />
