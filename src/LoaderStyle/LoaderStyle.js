@@ -4,8 +4,7 @@ const LoaderStyle = () => {
   const [css, setCss] = useState("/App.css")
 
   const handleButtonClick = () => {
-    if (css === "/style2.css") setCss("/App.css")
-    else setCss("/style2.css")
+    css === "/style2.css" ? setCss("/App.css") : setCss("/style2.css")
   }
 
   return (
