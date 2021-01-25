@@ -1,8 +1,6 @@
 ## React project example for loading css dynamically
 
--- see LoaderStyle/LoaderStyle.js component fopr implementation
-
-## ---------------------
+See LoaderStyle/LoaderStyle.js component fopr implementation
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
