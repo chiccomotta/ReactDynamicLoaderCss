@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 
+// Componente per cambio .css dinamico
 const LoaderStyle = () => {
   const [css, setCss] = useState("/App.css")
 
